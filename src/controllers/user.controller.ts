@@ -6,22 +6,26 @@ import { IUser } from '../types'
 export const userApiInfo = (req: Request,res: Response)=> {
     res.json({
         'User Routes': {
-          'Get User List': {
-            'url':'/user/list',
-            'method': 'GET'
-          },
-          'Create User': {
-            'url':'/user/create',
-            'method': 'POST'
-          },
-          'Update User': {
-            'url':'/user/update',
-            'method': 'PUT'
-          },
-          'Delete User': {
-            'url':'/user/delete',
-            'method': 'DELETE'
-          }
+            'Find User': {
+              'url':'/user/:user-id',
+              'method': 'GET'
+            },
+            'Get User List': {
+              'url':'/user/list',
+              'method': 'GET'
+            },
+            'Create User': {
+              'url':'/user/create',
+              'method': 'POST'
+            },
+            'Update User': {
+              'url':'/user/update',
+              'method': 'PUT'
+            },
+            'Delete User': {
+              'url':'/user/delete',
+              'method': 'DELETE'
+            }
         }
       });
 }
